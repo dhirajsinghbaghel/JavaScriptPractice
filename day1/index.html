@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Hellow </h1>
+<button onclick="runalert()">click for alert</button>
+
+<br />
+
+<br />
+
+<button onclick="writeText()"> Write a text in box</button>
+<br />
+<div style=" border: 1px solid black; width: 400px; height: 400px;">
+
+</div>
+
+<script>
+    function runalert() {
+        alert("Hii This Is Alert ")
+    }
+
+    function writeText() {
+        var div = document.getElementsByTagName("div");
+        console.log(div);
+
+        div['0'].innerHTML = "writing a text";
+    }
+
+</script>
+
+<body>
+
+</body>
+
+</html>
