@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <div style=" width: 500px ;border: 1px solid black; padding: 20px;">
+            <h1 id="firstText">Radha RANI</h1> <input placeholder="colorname" type="text" id="colorInput">
+            <button id="cApplyBtn">
+                apply</button>
+        </div>
+
+        <div style=" margin-top: 20px; width: 500px ;border: 1px solid black; padding: 20px;">
+            <h1 id="text2">Warning</h1>
+            <button id="redApplyBtn">
+                click to red</button>
+        </div>
+
+    </center>
+
+    <script>
+        var cApplyBtn = document.getElementById("cApplyBtn");
+        cApplyBtn.onclick = function () {
+            var colorInput = document.getElementById("colorInput").value;
+            var firstText = document.getElementById("firstText");
+            firstText.style.color = colorInput;
+        }
+
+        var cApplyBtn = document.getElementById("redApplyBtn");
+        cApplyBtn.onclick = function () {
+
+            var firstText = document.getElementById("text2");
+            firstText.style.color = "red";
+        }
+    </script>
+</body>
+
+</html>
