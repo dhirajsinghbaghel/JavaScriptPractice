@@ -21,6 +21,12 @@
                 click to red</button>
         </div>
 
+        <div style=" margin-top: 20px; width: 500px ;border: 1px solid black; padding: 20px;">
+            <h1 id="text3">Adjust Text Size For Rang Input</h1>
+            <input type="range" min="0" max="100" id="sizinput" oninput="changesize()">
+
+        </div>
+
     </center>
 
     <script>
@@ -34,8 +40,15 @@
         var cApplyBtn = document.getElementById("redApplyBtn");
         cApplyBtn.onclick = function () {
 
-            var firstText = document.getElementById("text2");
+
             firstText.style.color = "red";
+        }
+
+        function changesize() {
+            var sizinput = document.getElementById("sizinput").value;
+            var firstText = document.getElementById("text3");
+            firstText.style.fontSize = sizinput + "px";
+
         }
     </script>
 </body>
